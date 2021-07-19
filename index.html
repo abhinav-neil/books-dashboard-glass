@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books Dashboard</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user" id="profile-pic">
+            <img src="./images/holden-caulfield.jpeg" alt=""/> 
+            <h3>abhinav-neil</h3>
+          </div>
+          <div class="links">
+            <div class="link">
+              <img src="./images/book-shelf-64.png" alt="" />
+              <h2>Library</h2>
+            </div>
+            <div class="link">
+              <img src="./images/book-bookmark-64.png" alt="" />
+              <h2>Reading</h2>
+            </div>
+            <div class="link">
+              <img src="./images/book-fav-64.png" alt="" />
+              <h2>Favs</h2>
+            </div>
+          </div>
+          <div class="book-club">
+            <h2>Join my book club</h2>
+            <img src="./images/book-club.png" alt="" />
+          </div>
+        </div>
+        <div class="games">
+          <div class="status">
+            <h1>Reading</h1>
+            <input type="text" />
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="./images/assassns.png" alt="" />
+              <div class="card-info">
+                <h2>Ficciones</h2>
+                <p>Jorge Luis Borges</p>
+                <div class="progress"></div>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
+              </div>
+              <!-- <h2 class="percentage">60%</h2> -->
+            </div>
+            <div class="card">
+              <img src="./images/sackboy.png" alt="" />
+              <div class="card-info">
+                <h2>Gödel, Escher, Bach: an Eternal Golden Braid</h2>
+                <p>Douglas Hofstadter</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 100%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">60%</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/spiderman.png" alt="" />
+              <div class="card-info">
+                <h2>A Clockwork Orange</h2>
+                <p>Anthony Burgess</p>
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 100%"">30%</div>
+                </div>
+              </div>
+           </div>
+        </div>
+      </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+  </body>
+</html>
