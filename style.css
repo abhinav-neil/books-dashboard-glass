@@ -7,11 +7,11 @@
 h1 {
   color: #426696;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
   opacity: 0.8;
+  text-align: center;
 }
-h2,
-p {
+h2 {
   font-size: 1.5rem;
   color: #658ec6;
   font-weight: 500;
@@ -19,6 +19,7 @@ p {
 }
 
 h3 {
+  font-size: 1rem;
   color: #426696;
   font-weight: 600;
   opacity: 0.8;
@@ -90,6 +91,7 @@ main {
   width: 80%;
   object-fit: contain;
   border-radius: 50%;
+  margin-bottom: 1rem;
 }
 .link {
   display: flex;
@@ -107,7 +109,9 @@ main {
 
 .book-club {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  /* border: 1px solid white; */
   border-radius: 2rem;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
   color: white;
   padding: 1rem;
   position: relative;
@@ -115,13 +119,7 @@ main {
   object-fit: contain;
 }
 
-.book-club img {
-  /* position: absolute;
-  top: -10%;
-  right: 10%; */
-  border-radius: 50%;
-  width: 100%;
-}
+
 .book-club h2 {
   /* width: 40%; */
   color: white;
@@ -130,22 +128,6 @@ main {
 }
 
 /* GAMES */
-.status {
-  margin-bottom: 3rem;
-}
-
-.status input {
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
-  border: none;
-  width: 50%;
-  padding: 0.5rem;
-  border-radius: 2rem;
-}
-
 .games {
   width: 60%;
   /* flex: 2 2 90%; */
@@ -155,21 +137,42 @@ main {
   justify-content: space-evenly;
 }
 
-.card {
+.cards {
+  height: 80vh;
   display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.card {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   background: linear-gradient(
     to left top,
     rgba(255, 255, 255, 0.8),
     rgba(255, 255, 255, 0.5)
   );
   border-radius: 1rem;
-  margin: 2rem 0rem;
-  padding: 2rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
-  justify-content: space-between;
+}
+
+.card img {
+  width: 150px;
+  height: 70%;
+  /* object-fit: contain; */
+  border-radius: 20%;
+  margin-bottom: 0.3rem;
 }
 
 .progress {
+  width: 80%;
+}
+/* .progress {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   width: 100%;
   height: 25%;
@@ -184,11 +187,12 @@ main {
   background: rgb(236, 236, 236);
   position: absolute;
   left: 60%;
-}
+} */
 .card-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: ;
 }
 
 .percentage {
