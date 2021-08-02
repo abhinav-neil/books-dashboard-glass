@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./sass.css" />
   </head>
   <body>
     <main>
@@ -20,22 +21,22 @@
             <img src="./images/holden-caulfield.png" alt=""/> 
             <h3>abhinav-neil</h3>
           </div>
-          <div class="links">
+          <div class="categories">
             <div>
               <img src="./images/book-shelf-64.png" alt="" />
-              <button type="button" class="btn btn-outline-secondary disabled w-75 mt-3 mb-3">
+              <button>
                 <h2>Library</h2>
               </button>
             </div>
             <div>
               <img src="./images/book-bookmark-64.png" alt="" />
-              <button type="button" class="btn btn-outline-secondary btn-active disabled w-75 mt-3 mb-3">
+              <button id="active-button">
                 <h2>Reading</h2>
               </button>
             </div>
             <div>
               <img src="./images/book-fav-64.png" alt="" />
-              <button type="button" class="btn btn-outline-secondary disabled w-75 mt-3 mb-3">
+              <button>
                 <h2>Favs</h2>
               </button>
             </div>
@@ -44,11 +45,11 @@
             <h2>Join my book club</h2>
           </div>
         </div>
-        <div class="games">
+        <div id="active-category">
           <div class="status">
-            <h1 tex>Reading</h1>
+            <h1>Reading</h1>
           </div>
-          <div class="cards">
+          <div id="active-books">
             <div class="card">
               <div class="card-info">
                 <h3>Jorge Luis Borges: Ficciones</h3>
@@ -83,4 +84,6 @@
     <div class="circle1"></div>
     <div class="circle2"></div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="app.js" defer="defer"></script>
 </html>
